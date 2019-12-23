@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>梅西中文网会员注册中心</title>
+<link rel="stylesheet" type="text/css" href="css/register.css">
+<script type="text/javascript" src="js/reg.js"></script>
+</head>
+
+<body>
+<script id="bg" src="js/bg.js" color="255,0,0"  opacity="1"  count="120" zindex="-2">
+</script>
+<div class="wrapper">
+<div class="container">
+<h1>会员注册</h1>
+<form id="form" action="#">
+
+       用户名：
+            <input id="user" type="text" name="name" onblur="checkPwd()" />
+            <div class="inp" id="user_prompt"></div>
+       密码：
+            <input id="pwd" type="password" name="pwd" onblur="checkPwd()"  />
+            <dd><div class="inp" id="pwd_prompt"></div></dd>
+       确认密码：
+            <input id="repwd" type="password" name="pwd1" onblur="checkRepwd()" />
+            <dd><div class="inp" id="repwd_prompt"></div></dd>
+       电子邮件：
+            <input id="email" type="email" name="email" onblur="checkEmail()" />
+            <div class="inp" id="email_prompt"></div>
+        <dt>年龄：</dt>
+            <input type="date" name="age" />
+        手机号码：
+            <input id="mobile" type="text" name="phone_num" onblur="checkMobile()" />
+            <div class="inp" id="mobile_prompt"></div>
+            <button type="submit" id="login-button">提交</button>
+   
+</form>
+</div>
+</div>
+</body>
+</html>

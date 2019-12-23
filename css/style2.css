@@ -1,0 +1,76 @@
+@charset "utf-8";
+.view2 {
+   width: 400px;
+   height: 450px;
+   margin:10px;
+   display:inline;
+   float: left;
+   border: 10px solid #fff;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   box-shadow: 1px 1px 2px #e6e6e6;
+}
+.view2 h2 {
+   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+   background: transparent;
+   margin: 20px 40px 0px 40px;
+   color: #0F3; 
+   transform: scale(0);
+   transition: all 0.5s linear;
+   opacity: 0;
+}
+.view2 p {
+   font-size: 20px;
+   position: relative;
+   padding: 10px 20px 20px;
+   text-align: center;
+   color: #333;
+   filter: alpha(opacity=0);
+   opacity: 0;
+   transform: scale(0);
+   transition: all 0.5s linear;
+}
+.view2 a.info {
+   display: inline-block;
+   text-decoration: none;
+   padding: 7px 14px;
+   background: #000;
+   color: #fff;
+   opacity: 0;
+   transform: scale(0);
+   transition: all 0.5s linear;
+   
+}
+.view2:hover h2,.view2:hover p,.view2:hover a.info {  
+   transform: scale(1);
+   opacity: 1;
+}
+.view2 img {
+	width:100%;
+	height:100%;
+   transform: scaleY(1);
+   transition: all 0.7s ease-in-out;
+}
+.view2:hover img{
+   transform: scale(1);
+   opacity: 0;
+}
+.view2 .mask {
+   width: 400px;
+   height: 450px;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+   background-color: rgba(255, 231, 179, 0.3);
+   transition: all 0.5s linear;
+   opacity: 0;
+}
+.view2:hover .mask {
+   opacity: 1;
+}
+/* CSS Document */
+
+
+
